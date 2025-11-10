@@ -1,4 +1,5 @@
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 import { motion } from "framer-motion";
@@ -65,7 +66,7 @@ export const Hero = () => {
 
           <motion.div className="ctabutton" variants={staggerContainer}>
             <motion.a
-              href="#project"
+              href="#projects"
               className="cta-primary"
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
