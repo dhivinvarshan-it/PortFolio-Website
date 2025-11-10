@@ -13,7 +13,7 @@ const staggerContainer = {
   },
 };
 
-const Navbar = () => {
+const Navbars = () => {
   return (
     <motion.nav
       className="navbar"
@@ -45,4 +45,4 @@ const Navbar = () => {
     </motion.nav>
   );
 };
-export default Navbar;
+export default Navbars;

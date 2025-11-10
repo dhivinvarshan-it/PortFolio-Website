@@ -10,7 +10,9 @@
   import Skill from './components/Skill';
 
   import Project from './components/Project';
-// import Navbar from './components/navbar';
+import Navbars from './components/Navbars';
+
+
 
   
 
@@ -31,7 +33,8 @@
     return (
 
       <div className={`app ${isLoaded ? "loaded" : ""}`}>
-        {/* <Navbar/> */}
+       
+       <Navbars/>
 
       
         <Hero/>
