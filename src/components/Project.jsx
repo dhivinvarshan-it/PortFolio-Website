@@ -61,7 +61,8 @@ const Project = () => {
             <p>
               A full-stack application that allows users to rent vehicles online
               with features like booking management, authentication, and payment
-              integration.
+              integration.git remote add origin https://github.com/dhivinvarshan/myportfolio.git
+
             </p>
             <div className="project-tech">
               <span>React</span>

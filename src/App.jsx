@@ -9,7 +9,8 @@ import emailjs from "@emailjs/browser";
 import Contact from './components/Contact';
 import Skill from './components/Skill';
 
-import Project from './components/project';
+import Project from './components/Project';
+
 import { Navbar } from './components/navbar';
 
 
