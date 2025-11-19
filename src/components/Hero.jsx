@@ -1,6 +1,6 @@
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import dhivin from '../image/dhivindk.jpg';
 
 import { motion } from "framer-motion";
 
@@ -108,29 +108,29 @@ export const Hero = () => {
             </motion.a>
           </motion.div>
         </motion.div>
-
-       
         <motion.div
-          className="hero-image-container"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7, delay: 0.8 }}
-        >
-          <img
-            src="/image/profile.jpg"
-            alt="Dhivin Varshan K"
-            className="hero-image"
-          />
-          <motion.a
-            href="https://drive.google.com/file/d/19YVC7_CFkTVemCCSGG0D60paiqLYWPty/view?usp=drivesdk"
-            download
-            className="download-btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <i className="fas fa-download"></i> Download CV
-          </motion.a>
-        </motion.div>
+              className="hero-image-container"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.8 }}
+            >
+              <img
+                src={dhivin}
+                alt="Dhivin Varshan K"
+                className="hero-image"
+              />
+
+              <motion.a
+                href="https://drive.google.com/file/d/19YVC7_CFkTVemCCSGG0D60paiqLYWPty/view?usp=drivesdk"
+                download
+                className="download-btn"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="fas fa-download"></i> Download CV
+              </motion.a>
+            </motion.div>
+
       </div>
     </motion.section>
   );
