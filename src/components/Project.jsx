@@ -1,4 +1,6 @@
-
+import vehicle from '../image/vehicle rental.png';
+import rental from '../image/rental.png';
+import indian from '../image/indian.png';
 
 import { motion } from "framer-motion";
 
@@ -43,7 +45,8 @@ const Project = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        {/* ========== Project 1 ========== */}
+
+        {/* ========== Project 1 (Service Booking) ========== */}
         <motion.div
           className="project-card"
           variants={fadeInUp}
@@ -52,36 +55,7 @@ const Project = () => {
           <motion.div
             className="project-img"
             style={{
-              backgroundImage: "url('src/image/vehicle rental.png')",
-            }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          />
-          <div className="project-content">
-            <h3>Vehicle Rental System</h3>
-            <p>
-              A full-stack application that allows users to rent vehicles online
-              with features like booking management, authentication, and payment
-              integration.git remote add origin https://github.com/dhivinvarshan/myportfolio.git
-
-            </p>
-            <div className="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* ========== Project 2 ========== */}
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-img"
-            style={{
-              backgroundImage: "url('src/image/Screenshot 2025-10-07 201619.png')",
+              backgroundImage: `url(${rental})`,
             }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
@@ -99,7 +73,7 @@ const Project = () => {
           </div>
         </motion.div>
 
-        {/* ========== Project 3 ========== */}
+        {/* ========== Project 2 (Indian Team Website) ========== */}
         <motion.div
           className="project-card"
           variants={fadeInUp}
@@ -108,22 +82,50 @@ const Project = () => {
           <motion.div
             className="project-img"
             style={{
-              backgroundImage: "url('src/image/indian.png')",
+              backgroundImage: `url(${indian})`,
             }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
           <div className="project-content">
             <h3>Clone Indian Team Website</h3>
             <p>
-              I have Done the Indian Cricket Team Website to study about HTML and Css ,Styling objects and learned to make the professional website of the ICT
+              I created the Indian Cricket Team website using HTML and CSS to
+              learn layout design, styling, and how to build a professional UI.
             </p>
             <div className="project-tech">
               <span>HTML</span>
               <span>CSS</span>
-              
             </div>
           </div>
         </motion.div>
+
+        {/* ========== Project 3 (Vehicle Rental) ========== */}
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+        >
+          <motion.div
+            className="project-img"
+            style={{
+              backgroundImage: `url(${vehicle})`,
+            }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <div className="project-content">
+            <h3>Vehicle Rental System</h3>
+            <p>
+              A full-stack application that allows users to rent vehicles online
+              with booking management, authentication, and payment flow.
+            </p>
+            <div className="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </motion.div>
+
       </motion.div>
     </motion.section>
   );
