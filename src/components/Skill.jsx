@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   FaHtml5,
@@ -10,13 +8,7 @@ import {
   FaJava,
   FaBootstrap,
 } from "react-icons/fa";
-import {
-  SiSpringboot,
-  SiHibernate,
-  SiMysql,
-  SiC,
-} from "react-icons/si";
-
+import { SiSpringboot, SiHibernate, SiMysql, SiC } from "react-icons/si";
 
 const skills = [
   { icon: <FaJava color="#E76F00" />, name: "Java", level: 90 },
@@ -42,15 +34,22 @@ const Skill = () => {
 
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
+          <div
+            key={index}
+            className="skill-card fade-up"
+            style={{ animationDelay: `${index * 0.18}s` }}
+          >
             <div className="skill-icon">{skill.icon}</div>
             <p className="skill-name">{skill.name}</p>
+
+            {/* Progress Bar */}
             <div className="progress-bar">
               <div
-                className="progress-fill"
-                style={{ width: `${skill.level}%` }}
+                className="progress-fill animate-progress"
+                style={{ "--finalWidth": `${skill.level}%` }}
               ></div>
             </div>
+
             <span className="skill-percent">{skill.level}%</span>
           </div>
         ))}
